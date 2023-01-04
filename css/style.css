@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	background-color: rgb(255, 184, 246);
+}
+
+[class*="__container"] {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.header__container p{
+	text-align: center;
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+.block__translate,
+.block__scale,
+.block__rotate,
+.block__skew,
+.block__matrix,
+.block__2d-transform,
+.block__transform-origin,
+.block__perspective,
+.block__3d,
+.block__transform-style {
+	border: 3px solid rgb(172, 106, 238);
+	margin: 0 auto 30px;
+	max-width: 600px;
+	min-height: 250px;
+	padding: 15px;
+	position: relative;
+
+}
+
+.block__title{
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.block__box{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgba(137, 43, 226, 0.63);
+	top: 60px;
+	left: 250px;
+	z-index: 1;
+}
+
+.block--opacity{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(43, 226, 86);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: translate(20px,30px);
+	z-index: 2;
+}
+
+.block--opacity-y{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(226, 226, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: translateY(40px);
+	z-index: 3;
+}
+
+.block--opacity-x{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(226, 80, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: translateX(50px);
+	z-index: 4;
+}
+
+.block--opacity-scale-less{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(43, 226, 86);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: scale(0.5);
+}
+
+.block--opacity-scale-larger {
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(43, 226, 214);
+	top: 60px;
+	left: 250px;
+	opacity: 0.5;
+	transform: scale(1.3);
+}
+
+.block--opacity-rotate{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(46, 226, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: rotate(20deg);
+	z-index: 2;
+}
+
+.block--opacity-rotate-y{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(208, 226, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: rotateY(50deg);
+	z-index: 3;
+}
+
+.block--opacity-rotate-x{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(226, 43, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: rotateX(50deg);
+	z-index: 4;
+}
+
+.block--opacity-skew{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(214, 226, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform:skew(60deg,20deg);
+	z-index: 4;
+}
+
+.block--opacity-skew-y{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(226, 43, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform:skewY(40deg);
+	z-index: 4;
+}
+
+.block--opacity-skew-x{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(49, 226, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform:skewX(40deg);
+	z-index: 5;
+}
+
+.block--opacity-matrix{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(49, 226, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: matrix(1, 0.5, 0, 0.8, 0, 0.3);
+	z-index: 6;
+}
+
+.block--opacity-2d-transform{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(226, 113, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: translate(40%, 20%) scale(0.8) rotate(60deg) skew(20deg, 20deg);
+	z-index: 6;
+}
+
+.block--opacity-transform-origin{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(226, 113, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform-origin:20px 20px;
+   transform: rotate(70deg);
+	z-index: 2;
+}
+
+.block__perspective{
+	perspective: 100px;
+	perspective-origin:center;
+}
+.block--opacity-perspective{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(55, 226, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: rotateX(40deg);
+}
+
+.block__3d{
+	perspective: 300px;
+}
+.block--opacity-3d-translate{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(55, 226, 43);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: translate3d(20px, 20px, 100px);
+}
+
+.block--opacity-3d-scale{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(255, 247, 7);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: scale3d(0.5,0.8,1.5);
+}
+
+.block--opacity-3d-rotate{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgb(255, 7, 243);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: rotate3d(3, 5, 2, 30deg);
+}
+
+ .block__transform-style{
+	perspective: 400px;
+   transform-style: preserve-3d;
+} 
+
+.block--opacity-transform-style{
+	position: absolute;
+	width: 100px;
+	height: 125px;
+	background-color: rgba(32, 255, 7, 0.522);
+	top: 60px;
+	left: 250px;
+	opacity: 0.7;
+	transform: rotateY(45deg);
+}
+.car{
+	padding-top: 500px;
+	position: relative;
+	
+}
+
+
+.car__body{
+	position: absolute;
+	z-index: 3;
+	top : 39px
+}
+
+.car__front-wheels{
+	position: absolute;
+	top: 240px;
+	z-index: 2;
+}
+
+.car__front-wheels:hover{
+	transform: translate(20px, 20px);
+}
+
+.car__bumper{
+	position: absolute;
+	z-index: 4;
+	top:285px;
+	left:30px;
+}
+
+.car__bumper:hover{
+	transform: scale(1.5);
+}
+
+.car__lattice{
+	position: absolute;
+	z-index: 5;
+	top: 265px;
+	left:20px;
+}
+
+.car__lights{
+	position: absolute;
+	z-index: 6;
+	top: 180px;
+	left:20px;
+}
+
+.car__lights:hover{
+	transform: skew(20deg,40deg);
+}
+.car__rear-wheels{
+	position: absolute;
+	z-index: 1;
+	top: 220px;
+	left:30px;
+}
+
+.car__rear_window{
+	position: absolute;
+	z-index: 7;
+	left: 65px;
+	top: 60px;
+}
+
+.car__salon{
+	position: absolute;
+	z-index: 8;
+	left: 65px;
+	top: 60px;
+}
+
+.car__salon:hover{
+	transform: rotate(20deg);
+}
